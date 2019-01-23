@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h1>Go (aka golang)</h1>
+				<h2>My favourite language</h2>
+				<img width="300px" height="300px" src="img/gologo.png">
+			</section>
+			<section>
+				<h1>Why go?</h1>
+				<p class="fragment fade-up">
+					Simple by design, convention and ethos.
+				</p>
+				<p class="fragment fade-up">
+					Only 25 keywords <span class="fragment fade-in">(C# has approx 75)</span>
+				</p>
+				<p class="fragment fade-up">
+					Little or no magic
+				</p>
+				<p class="fragment fade-up">
+					Single binary <span class="fragment fade-in">for any platform</span>
+				</p>
+			</section>
+			<section>
+				<h1>#1 Demo</h1>
+				<h2>Simplistic web server</h2>
+			</section>
+			<section>
+				<h1>#2 Testing</h1>
+				<ul>
+					<li>Testing framework built in</li>
+					<li>file
+						<pre>ffff_test.go</pre>
+					</li>
+					<li>func
+						<pre>Test_xxx(*testing.T)</pre>
+					</li>
+					<li>Sub tests</li>
+				</ul>
+			</section>
+			<section>
+				<h1>#3 'Realistic' server</h1>
+				<ul>
+					<li>More realistic web server</li>
+					<li>testing the handler func</li>
+					<li>testing with real http</li>
+				</ul>
+			</section>
+			<section>
+				<h1>#4 Concurrency</h1>
+				<ul>
+					<li><pre>go fn()</pre></li>
+					<li><pre>ch &lt;- sending</pre></li>
+					<li><pre>receiving &lt;- ch</pre></li>
+				</ul>
+			</section>
+			<section>
+				<h1>#5 Interfaces</h1>
+				<ul>
+					<li><pre>fmt.Stringer</pre></li>
+					<li><pre>fmt.error</pre></li>
+					<li><pre>MyInterface</pre></li>
+					<li><pre>io.Reader</pre></li>
+				</ul>
+			</section>
+			<section>
+				<h1>#6 Client app</h1>
+			</section>
+			<section>
+				<h1>golang.org</h1>
+				<a href="https://golang.org">
+					<ul>
+						<li>Tour</li>
+						<li>Docs</li>
+						<li>Effecitve Go</li>
+						<li>Blog</li>
+						<li>FAQ / Wiki</li>
+						<li>Slack / IRC / Forum / Mailing list</li>
+					</ul>
+				</a>
+			</section>
+			<section>
+				<h1>Thanks</h1>
+				<img width="40%" height="40%" src="img/gopher_mic_drop.png">
+			</section>
+		</div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } }
+			]
+		});
+	</script>
+</body>
+
+</html>

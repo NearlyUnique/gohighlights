@@ -1,1 +1,1 @@
-module github.com/NearlyUnique/highlights/src1
+module github.com/NearlyUnique/gohighlights/src1

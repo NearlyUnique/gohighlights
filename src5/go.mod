@@ -1,4 +1,4 @@
-module github.com/NearlyUnique/highlights/src5
+module github.com/NearlyUnique/gohighlights/src5
 
 require (
 	github.com/pkg/errors v0.8.1 // indirect

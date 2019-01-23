@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/NearlyUnique/highlights/src6/tfl"
+	"github.com/NearlyUnique/gohighlights/src6/tfl"
 	"github.com/pkg/errors"
 )
 
